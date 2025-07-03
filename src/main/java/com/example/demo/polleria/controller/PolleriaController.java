@@ -21,7 +21,7 @@ public class PolleriaController {
     @Autowired
     private ProductoFactory productoFactory;
     
-    // pagina principal de registro productos
+    // pagina principal para registrar productos
     @GetMapping("/")
     public String index(Model model) {
         model.addAttribute("totalProductos", productoService.contarTotal());

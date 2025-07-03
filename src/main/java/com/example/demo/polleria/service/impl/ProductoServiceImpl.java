@@ -22,13 +22,13 @@ public class ProductoServiceImpl implements ProductoService {
     
     @Override
     public Producto guardar(Producto producto) {
-        // convertir model a entity
+        // convierte model a entity
         ProductoEntity entity = productoMapper.modelToEntity(producto);
         
-        // guardar en bd
+        // guarda en la bd
         ProductoEntity savedEntity = productoRepository.save(entity);
         
-        // convertir entity a model y retornar
+        // convierte entity a model y lo regresa
         return productoMapper.entityToModel(savedEntity);
     }
     
@@ -49,14 +49,14 @@ public class ProductoServiceImpl implements ProductoService {
     }
     
     @Override
-    public Producto buscarPorId(Long id) {  // cambiar a Long
+    public Producto buscarPorId(Long id) { 
         return productoRepository.findById(id)
                 .map(productoMapper::entityToModel)
                 .orElse(null);
     }
     
     @Override
-    public void eliminar(Long id) {  // cambiar a Long
+    public void eliminar(Long id) {
         productoRepository.deleteById(id);
     }
     
