@@ -94,7 +94,7 @@
         </div>
     </div>
     <div class="text-center mt-3">
-        <a href="${pageContext.request.contextPath}/" class="btn btn-danger">Volver</a>
+        <a href="${pageContext.request.contextPath}/destino" class="btn btn-danger">Volver</a>
     </div>
 </body>
 </html>
