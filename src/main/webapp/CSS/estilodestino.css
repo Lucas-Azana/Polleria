@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+}
+
+/* Cabecera */
+header {
+    position: relative; /* Necesario para posicionar el icono */
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+
+.cabecera {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+/* Icono de usuario arriba a la derecha */
+.user {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 10;
+}
+
+.user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Texto de bienvenida */
+.texto-bienvenida {
+    margin-top: 20px;
+    font-size: 2em;
+    color: #b71c1c;
+    text-align: center;
+}
+
+/* Cuerpo principal */
+main {
+    text-align: center;
+    padding: 40px;
+}
+
+.frase h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Botones */
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.botones button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    background-color: #e53935;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botones button:hover {
+    background-color: #c62828;
+}
+
+/* Pie de página */
+footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.PDP h2 {
+    margin: 5px 0;
+}
+
+.PDP p {
+    font-weight: bold;
+}
