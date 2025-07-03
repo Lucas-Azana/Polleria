@@ -3,12 +3,12 @@ package com.example.demo.polleria.model;
 import java.time.LocalDate;
 
 public abstract class Producto {
-    protected Long id;  // agregar id
+    protected Long id;                
     protected String categoria;
     protected Double cantidad;
     protected Double precioTotal;
     protected LocalDate fechaIngreso;
-    protected LocalDate fechaRegistro;  // agregar fecha registro
+    protected LocalDate fechaRegistro; 
     
     public Producto() {
         this.fechaRegistro = LocalDate.now();

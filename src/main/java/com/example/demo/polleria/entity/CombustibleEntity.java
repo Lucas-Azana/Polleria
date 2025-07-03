@@ -1,13 +1,19 @@
-package com.example.demo.polleria.model;
+package com.example.demo.polleria.entity;
 
-public class Combustible extends Producto {
+import jakarta.persistence.*;
+
+@Entity
+@DiscriminatorValue("COMBUSTIBLE")
+public class CombustibleEntity extends ProductoEntity {
+    
+    @Column(name = "tipo_combustible")
     private String tipoCombustible;
     
-    public Combustible() {
+    public CombustibleEntity() {
         super("Combustibles");
     }
     
-    public Combustible(String tipoCombustible) {
+    public CombustibleEntity(String tipoCombustible) {
         super("Combustibles");
         this.tipoCombustible = tipoCombustible;
     }
